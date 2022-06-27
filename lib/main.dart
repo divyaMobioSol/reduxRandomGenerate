@@ -9,6 +9,7 @@ import 'actions.dart' as act;
 void main() {
   //final store = Store<int>(act.counterReducer, initialState: 0);
   final store = Store(initialState: 'lets do this', generateRandomValues);
+  //store.onChange.listen();
   runApp(homePage(
     // title: 'Flutter Redux Demo',
     store: store,

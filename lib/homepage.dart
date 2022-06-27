@@ -22,6 +22,7 @@ class homePage extends StatelessWidget {
               StoreConnector<dynamic, String>(builder: ((context, text) {
                 return Text(text);
               }), converter: (store) {
+                
                 return store.state.toString();
               }),
               StoreConnector<dynamic, VoidCallback>(
